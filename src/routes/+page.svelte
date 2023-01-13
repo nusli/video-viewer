@@ -2,10 +2,15 @@
 <script>
     import { onMount } from 'svelte';
 	import videojs from 'video.js'
+	import 'video.js/dist/video-js.css';
 
 
 	onMount(async () => {
-		const player = videojs('vid1', {});
+		const player = videojs('vid1', {
+  autoplay: 'muted',
+  controls: true
+});
+		p
 	});
     
 </script>
@@ -15,7 +20,7 @@
 		<h1 class="is-size-1">Horizontal View</h1>
 
         <video-js id="vid1">
-            <source src="//vjs.zencdn.net/v/oceans.mp4">
+            <source src="//vjs.zencdn.net/v/oceans.mp4"  type="video/mp4">
         </video-js>
 
 		<p>
