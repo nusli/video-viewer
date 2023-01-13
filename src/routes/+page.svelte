@@ -1,7 +1,13 @@
-<!--
+
 <script>
-    import {videojs} from 'video.js'
-    const player = videojs('vid1', {});
+    import { onMount } from 'svelte';
+	import videojs from 'video.js'
+
+
+	onMount(async () => {
+		const player = videojs('vid1', {});
+	});
+    
 </script>
 
 <div class="section">
@@ -25,5 +31,3 @@
 		</p>
 	</div>
 </div>
--->
-horizontal
