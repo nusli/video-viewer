@@ -35,18 +35,20 @@
 	})
 </script>
 
+<style>
+	.horizontal-video{
+
+	}
+</style>
+
 <div class="section">
 	<div class="container">
 		<h1 class="is-size-1">Horizontal View</h1>
 
-		<video-js id="horizontal1">
+
+		<video-js id="horizontal1" class="mb-4">
 			<!--<source src="//vjs.zencdn.net/v/oceans.mp4"  type="video/mp4">-->
 			<source src="horizontal.mp4" type="video/mp4" />
-		</video-js>
-
-		<video-js id="horizontal2" class="video-js vjs-theme-forest">
-			<!--<source src="//vjs.zencdn.net/v/oceans.mp4"  type="video/mp4">-->
-			<source src="horizontal.MOV" type="video/mp4" />
 		</video-js>
 
 		<p>
@@ -60,5 +62,12 @@
 				>Pixabay</a
 			>
 		</p>
+	
+		<video-js id="horizontal2" class="video-js vjs-theme-forest mt-4">
+			<!--<source src="//vjs.zencdn.net/v/oceans.mp4"  type="video/mp4">-->
+			<source src="horizontal.MOV" type="video/mp4" />
+		</video-js>
+
+		
 	</div>
 </div>
