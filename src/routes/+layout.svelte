@@ -28,6 +28,9 @@
                 on:click="{() => activePage = 'vertical'}"
                 href="/vertical"> Vertical View </a>
 
+			<a class="navbar-item" class:is-active="{activePage === 'svelte-video-player'}"
+                on:click="{() => activePage = 'svelte-video-player'}"
+                href="/svelte-video-player"> Svelte Video Player </a>
 		</div>
 
 	</div>
