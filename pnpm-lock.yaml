@@ -12,6 +12,7 @@ specifiers:
   prettier: ^2.8.0
   prettier-plugin-svelte: ^2.8.1
   svelte: ^3.54.0
+  svelte-adapter-github: 1.0.0-next.0
   svelte-video-player: ^1.2.5
   video.js: ^7.20.3
   vite: ^4.0.0
@@ -31,6 +32,7 @@ devDependencies:
   prettier: 2.8.2
   prettier-plugin-svelte: 2.9.0_74vfyr7qjo56zgjcvkwi6gyjxm
   svelte: 3.55.0
+  svelte-adapter-github: 1.0.0-next.0
   video.js: 7.20.3
   vite: 4.0.4
 
@@ -1293,6 +1295,10 @@ packages:
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+    dev: true
+
+  /svelte-adapter-github/1.0.0-next.0:
+    resolution: {integrity: sha512-a2PIoA2UuMJYnhUnh4JkMnC8GgsNgAJzT9Z6UJGG+l4861nlZ6tgU7oF6GHcC19pbA88tM+kxJ3maKgOO0onMg==}
     dev: true
 
   /svelte-hmr/0.15.1_svelte@3.55.0:

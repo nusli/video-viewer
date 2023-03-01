@@ -1,5 +1,6 @@
 <script>
 	import VideoPlayer from 'svelte-video-player';
+  import { base } from '$app/paths'
 	// import VideoPlayer from '../../src/VideoPlayer.svelte';
 	const poster =
 		'https://res.cloudinary.com/dvm02rtnk/image/upload/c_scale,w_1024,q_auto/v1628058523/blender/HERO_Blender_Grease_Pencil_Showcase_g86hfo.jpg';

@@ -1,4 +1,5 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from 'svelte-adapter-github';
+// import adapter from '@sveltejs/adapter-static';
 
 const dev = process.argv.includes('dev');
 
@@ -15,7 +16,7 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: dev ? '' : '/your-repo-name',
+			base: '/video-viewer',
 		}
 	}
 };

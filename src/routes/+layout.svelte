@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths'
 	export const prerender = true;
     let activePage = "horizontal"
 </script>
@@ -22,15 +23,15 @@
 		<div class="navbar-start">
 			<a class="navbar-item" class:is-active="{activePage === 'horizontal'}" 
                 on:click="{() => activePage = 'horizontal'}"
-                href="/"> Horizontal View </a>
+                href={base}> Horizontal View </a>
 
 			<a class="navbar-item" class:is-active="{activePage === 'vertical'}"
                 on:click="{() => activePage = 'vertical'}"
-                href="/vertical"> Vertical View </a>
+                href={base + "/vertical"}> Vertical View </a>
 
 			<a class="navbar-item" class:is-active="{activePage === 'svelte-video-player'}"
                 on:click="{() => activePage = 'svelte-video-player'}"
-                href="/svelte-video-player"> Svelte Video Player </a>
+                href={base + "/svelte-video-player"}> Svelte Video Player </a>
 		</div>
 
 	</div>

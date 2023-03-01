@@ -2,6 +2,7 @@
 	import { onMount, onDestroy } from 'svelte';
 	import videojs from 'video.js';
 	import 'video.js/dist/video-js.css';
+	import { base } from '$app/paths'
 
 	var playerh1, playerh2;
 	var test = "someTest"
@@ -48,7 +49,7 @@
 
 		<video-js id="horizontal1" class="mb-4">
 			<!--<source src="//vjs.zencdn.net/v/oceans.mp4"  type="video/mp4">-->
-			<source src="horizontal.mp4" type="video/mp4" />
+			<source src={base + "/horizontal.mp4"} type="video/mp4" />
 		</video-js>
 
 		<p>
@@ -65,7 +66,7 @@
 	
 		<video-js id="horizontal2" class="video-js vjs-theme-forest mt-4">
 			<!--<source src="//vjs.zencdn.net/v/oceans.mp4"  type="video/mp4">-->
-			<source src="horizontal.MOV" type="video/mp4" />
+			<source src={base + "/horizontal.MOV"} type="video/mp4" />
 		</video-js>
 
 		

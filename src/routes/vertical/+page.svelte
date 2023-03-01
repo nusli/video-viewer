@@ -2,6 +2,7 @@
 	import { onMount, onDestroy } from 'svelte';
 	import videojs from 'video.js';
 	import 'video.js/dist/video-js.css';
+	import { base } from '$app/paths'
 
 	let player;
 
@@ -40,7 +41,7 @@
 
 		<video-js id="vertical1" class="vertical-video video-js" >
 			<!--<source src="//vjs.zencdn.net/v/oceans.mp4"  type="video/mp4">-->
-			<source src="vertical.MOV" type="video/mp4" />
+			<source src={base + "/vertical.MOV"} type="video/mp4" />
 		</video-js>
 
 	</div>
